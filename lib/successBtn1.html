@@ -1,0 +1,14 @@
+<div class='customAlert'>
+    <p class='message'>Texto Copiado!</p>
+    <input type='button' class='confirmButton postBtns' value='Ok'>
+</div>
+<script type="text/javascript" id="scBtn">
+    $('.confirmButton').click(function(){
+        $('.customAlert').css('animation', 'fadeOut 0.3s linear');
+        setTimeout(function(){
+        $('.customDiv').css('display', 'none');
+        $('.customAlert').remove();
+        $('#scBtn').remove();
+        }, 300);
+    })
+</script>
